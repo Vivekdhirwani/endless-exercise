@@ -1,0 +1,135 @@
+.mainContainer {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}  
+
+.fixClass {
+  background-color: #3c3c3c;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'lato';
+}
+
+.dynamicClass {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'lato';
+}
+
+.nav {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+#logo {
+  margin-top: 10px;
+}
+
+.fixClass p {
+  font-size: 14px;
+}
+
+.textContainer {
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.backImg {
+  background: url('../assets/photo-couch_2x.jpg') no-repeat center;
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.backImg h1 {
+  margin: 0 !important;
+}
+
+.work {
+  text-align: center;
+}
+
+.startButton {
+  border-radius: 18px;
+  margin-top: 15px;
+  height: 35px;
+  width: 150px;
+  background: #7bf3ea;
+  transition: 0.3s;
+}
+
+.startButton:hover {
+  opacity: 0.6
+}
+
+span {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #7bf3ea;
+}
+
+.midClass {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .textContainer{
+    color: #fff;
+    position: absolute;
+    top: 180px;
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .midClass {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .nav {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .backImg {
+    background: url('../assets/photo-couch_2x.jpg') no-repeat center;
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 600px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .midClass {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  .backImg {
+    height: 450px;
+  }
+
+  .textContainer {
+    top: 140px;
+  }
+
+  .backImg h1 {
+    font-size: 25px;
+  }
+
+  .backImg p {
+    font-size: 12px;
+  }
+}

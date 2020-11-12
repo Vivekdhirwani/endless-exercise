@@ -1,0 +1,35 @@
+<div class="fixClass">
+  <div class="mainContainer">
+    <div class="nav">
+      <img id="logo" src="../assets/logo-endless.svg" width="170">
+    </div> 
+  </div>
+
+  <div class= "backImg">
+    <div class="mainContainer">  
+      <div class="textContainer">
+        <h4>New Games & Accessories</h4>
+        <h1>Monthly packages.</h1>
+        <h1>Excitement delivered daily.</h1>
+        <p>What's the best way to shop for the latest video games <br> and peripherals? How about never shopping at all? <br> You will get new stuff on your doorstep - every month.</p>
+        <button class="startButton">GET STARTED</button>
+      </div>  
+    </div>  
+  </div>
+</div>
+
+<!-- Dynamic Code of How It Works Part-->
+<div class="dynamicClass">
+  <h2 class="work">How It Works</h2>
+  <div class="mainContainer">
+    <div *ngFor= "let r of result">
+      <div class="midClass">  
+        <div class="responseClass">
+          <h1><span>0{{r.stepNumber}}</span></h1>
+          <h4>{{r.versionContent[0].title | uppercase}}</h4>
+          <p>{{r.versionContent[0].body}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
